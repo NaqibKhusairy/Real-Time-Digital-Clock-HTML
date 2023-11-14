@@ -30,7 +30,6 @@ function clock(){
 	{
 		h -= 12;
 	}
-
     $('hours').innerHTML = zeroPadding(h);
     $('min').innerHTML = zeroPadding(m);
     $('sec').innerHTML = zeroPadding(s);
