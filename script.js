@@ -26,7 +26,10 @@ function clock(){
     const date = today.getDate();
     const month = today.getMonth();
     const year = today.getFullYear();
-    h = h-12;
+	if(h>12)
+	{
+		h -= 12;
+	}
 
     $('hours').innerHTML = zeroPadding(h);
     $('min').innerHTML = zeroPadding(m);
